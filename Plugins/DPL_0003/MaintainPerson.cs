@@ -224,6 +224,18 @@ namespace DPL_0003
 
             entity.FirstName = txtFirstName.Text;
             entity.SecondName = txtSecondName.Text;
+            entity.Surname = txtSurname.Text;
+            entity.IDNumber = txtIDNumber.Text;
+            entity.GenderID = cmbGender.SelectedIndex;
+            entity.LanguageID = cmbLanguage.SelectedIndex;
+            // entity.NationalityID = cmbNationality.SelectedIndex;// Changed Entitys nationality id to int
+            entity.MaritalStatusID = cmbMaritialStatus.SelectedIndex;
+            entity.CellNumber = txtCellNumber.Text;
+            entity.TelNumber = txtTelNumber.Text;
+            entity.EmailAddress = txtEmail.Text;
+            entity.EmployerCompany = txtEmployerCompanyName.Text;
+            entity.PhysicalAddressStreetName = txtPhysicalStreetName.Text;
+            entity.PhysicalAddressStreetNumber = txtPhysicalStreetNumber.Text;
         }
     }
 }
