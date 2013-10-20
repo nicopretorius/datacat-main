@@ -57,6 +57,7 @@
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(174, 20);
             this.txtUserName.TabIndex = 0;
+            this.txtUserName.Text = "nico";
             this.txtUserName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtUserName_KeyDown);
             // 
             // txtPassword
@@ -66,6 +67,7 @@
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(174, 20);
             this.txtPassword.TabIndex = 1;
+            this.txtPassword.Text = "nicolaas";
             this.txtPassword.UseSystemPasswordChar = true;
             this.txtPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPassword_KeyDown);
             // 
@@ -136,7 +138,7 @@
             this.txtHost.Name = "txtHost";
             this.txtHost.Size = new System.Drawing.Size(174, 20);
             this.txtHost.TabIndex = 6;
-            this.txtHost.Text = "172.16.12.98";
+            this.txtHost.Text = "headoffice.marconi.co.za";
             this.txtHost.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtHost_KeyDown);
             // 
             // frmLogin

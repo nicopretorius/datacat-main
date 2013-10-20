@@ -26,9 +26,9 @@ namespace DataCat_Client
         private void btnLogin_Click(object sender, EventArgs e)
         {
             if(txtHost.Text == "")
-               DataCat.Connection.Connection.SetConnectionString("Server=127.0.0.1;Port=3306;Database=DataCat;Uid=DataCat;Pwd=geentoegang;");
+               DataCat.Connection.Connection.SetConnectionString("Server=127.0.0.1;Port=3306;Database=DataCat;Uid=nico;Pwd=Htcfrdfs1%;");
             else
-                DataCat.Connection.Connection.SetConnectionString("Server=" + txtHost.Text + " ;Port=3306;Database=DataCat;Uid=DataCat;Pwd=geentoegang;");
+                DataCat.Connection.Connection.SetConnectionString("Server=" + txtHost.Text + " ;Port=3306;Database=DataCat;Uid=nico;Pwd=Htcfrdfs1%;");
 
             if (txtUserName.Text == "")
             {
