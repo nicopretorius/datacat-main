@@ -121,6 +121,13 @@ namespace DataCat.Database.Entities
 		string facebook = "";
 		string twitter = "";
 		string skype = "";
+        int logoImageID = -1;
+
+        public int LogoID
+        {
+            get { return logoImageID; }
+            set { logoImageID = value; }
+        }
 		bool bModified = false;
 
 		#endregion
@@ -583,7 +590,8 @@ namespace DataCat.Database.Entities
 						EmailAddress, 
 						Facebook, 
 						Twitter, 
-						Skype
+						Skype,
+                        LogoImageID
 					FROM Client
 					WHERE iD = " + inID.ToString()))
                  {
@@ -613,6 +621,7 @@ namespace DataCat.Database.Entities
                          facebook = Convert.ToString(reader["Facebook"]);
                          twitter = Convert.ToString(reader["Twitter"]);
                          skype = Convert.ToString(reader["Skype"]);
+                         logoImageID = Convert.ToInt32(reader["LogoImageID"]);
                      }
 				    bModified = false;
 				    return true;
@@ -658,8 +667,9 @@ namespace DataCat.Database.Entities
 				proc.AddInputParameterWithValue("inFacebook", facebook); 
 				proc.AddInputParameterWithValue("inTwitter", twitter); 
 				proc.AddInputParameterWithValue("inSkype", skype);
+                proc.AddInputParameterWithValue("inLogoImageID", logoImageID); 
 				proc.AddOutParameter("outID", MySql.Data.MySqlClient.MySqlDbType.Int32);
-
+                proc.AddInputParameterWithValue("inLogoImageID", logoImageID); 
 				if(proc.Execute())
 				{
 					iD = Convert.ToInt32(proc.GetParameterValue("outID"));
@@ -709,7 +719,7 @@ namespace DataCat.Database.Entities
 				proc.AddInputParameterWithValue("inFacebook", facebook); 
 				proc.AddInputParameterWithValue("inTwitter", twitter); 
 				proc.AddInputParameterWithValue("inSkype", skype);
-
+                proc.AddInputParameterWithValue("inLogoImageID", logoImageID); 
 				if (proc.Execute())
 				{
 						
