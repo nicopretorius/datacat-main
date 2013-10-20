@@ -36,7 +36,7 @@
             // lblSelected
             // 
             this.lblSelected.AutoSize = true;
-            this.lblSelected.Location = new System.Drawing.Point(379, 7);
+            this.lblSelected.Location = new System.Drawing.Point(444, 7);
             this.lblSelected.Name = "lblSelected";
             this.lblSelected.Size = new System.Drawing.Size(0, 13);
             this.lblSelected.TabIndex = 8;
